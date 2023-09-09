@@ -31,6 +31,11 @@ Plugin 'tpope/vim-fugitive'
 " Git plugin not hosted on GitHub
 Plugin 'git://git.wincent.com/command-t.git'
 
+" add color theme
+Plugin 'sainnhe/everforest'
+
+" add style highlight
+Plugin 'sheerun/vim-polyglot'
 " git repos on your local machine (i.e. when working on your own plugin)
 "Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
@@ -58,7 +63,7 @@ filetype plugin indent on    " required
 " a theme for vim
 let g:molokai_original = 1
 
-" activate installed package 
+" activate installed package
 packadd! matchit
 
 " set indent to 4 space
@@ -145,7 +150,6 @@ nnoremap <silent> [B :blast<CR>
 
 " Easy Expansion of the Active File Directory
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
-packadd! everforest
 " Important!!
 if has('termguicolors')
   set termguicolors
